@@ -30,6 +30,10 @@
                             <a href="." >{{ site.title | escape }}</a>
                         {% endif %}
                     </h1>
+                    <a class="dark-mode-button">
+                        <img src="{{site.baseurl}}/assets/moon-32.png" id="icon-dark">
+                        <img src="{{site.baseurl}}/assets/sun-32.png" id="icon-light" style="display: none;">
+                    </a>
                 </div>
 
                 <div class="body-inner">
@@ -62,7 +66,9 @@
             gitbook.push(function() {
                 gitbook.page.hasChanged({%- include metadata-post.json.tpl -%});
             });
+
             </script>
+            <script src="{{site.baseurl}}/assets/gitbook/darkreader.js"></script>
         </div>
 
         {%- include footer.html -%}

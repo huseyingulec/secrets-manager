@@ -387,3 +387,24 @@ a.blog-listing-link {
 a.blog-listing-link h2 {
     margin-top: 0 !important;
 }
+
+.dark-mode-button {
+    position: fixed;
+    top: 10px;
+    right: 40px;
+}
+
+.light-theme {
+    --background-color: #ffffff !important;
+    --color: #000000 !important;
+}
+
+.dark-theme {
+    --background-color: #000000 !important;
+    --color: #ffffff !important;
+}
+
+:root {
+    background-color: var(--background-color) !important;
+    color: var(--color) !important
+}
